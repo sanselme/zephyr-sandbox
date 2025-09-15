@@ -21,7 +21,7 @@ set(ZEPHYR_TOOLCHAIN_VARIANT $ENV{ZEPHYR_TOOLCHAIN_VARIANT})  # Toolchain varian
 
 # Add custom Zephyr modules (e.g., for Swift support)
 # Uncomment and set the path to your custom Zephyr modules if needed
-# set(ZEPHYR_EXTRA_MODULES ${CMAKE_CURRENT_LIST_DIR}/modules/lang/swift)
+set(ZEPHYR_EXTRA_MODULES ${CMAKE_CURRENT_LIST_DIR}/modules/hello)
 
 # Find and include Zephyr RTOS package
 # This initializes Zephyr's build system and makes its build targets available

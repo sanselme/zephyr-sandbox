@@ -1,0 +1,6 @@
+config HELLO
+  bool "Enable Hello Module"
+  help
+    This option enables the Hello module, which provides basic greeting
+    functionalities. It is useful for demonstration and testing purposes.
+    If you do not need this module, you can disable it to save resources.
