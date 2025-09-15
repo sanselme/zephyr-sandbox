@@ -8,6 +8,4 @@ import Hello
 ///
 /// This struct serves as the application's entry point and contains
 /// the main execution loop for the program.
-public func entrypoint() {
-  Hello.run()
-}
+public func entrypoint() { Hello.run() }
