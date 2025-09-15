@@ -1,7 +1,13 @@
-// SPDX-Licence-Identifier: GPL-3.0
+// SPDX-License-Identifier: GPL-3.0
 // Copyright (c) 2025 Schubert Anselme <schubert@anselm.es>
 
 import Zephyr
+
+// Timeout interval in milliseconds
+let TIMEOUT_INTERVAL: Double = 1000
+
+// Sleep duration in milliseconds
+let SLEEP_DURATION = Duration.milliseconds(TIMEOUT_INTERVAL)
 
 /// The main entry point for the Zephyr Swift application.
 ///
@@ -15,7 +21,6 @@ public struct Entrypoint {
   /// It prints an initial greeting message and then enters an infinite
   /// loop that keeps the application running continuously, which is a
   /// common pattern in embedded systems applications.
-
   public static func main() {
     // Display initial greeting message
     print("Hello from Swift!!!")
@@ -25,7 +30,7 @@ public struct Entrypoint {
     // should continue running until power is removed
     while true {
       // Pause execution for 1 second
-      k_msleep(1000)
+      sleep(SLEEP_DURATION)
 
       // Print a status message to indicate the application is still alive
       print("still running...")
