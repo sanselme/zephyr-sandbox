@@ -1,4 +1,4 @@
-name: hello
+name: custom-libs
 
 build:
   cmake: .

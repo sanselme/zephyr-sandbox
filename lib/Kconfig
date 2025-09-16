@@ -1,0 +1,5 @@
+menu "Custom Libraries"
+
+rsource "hello/Kconfig"
+
+endmenu
