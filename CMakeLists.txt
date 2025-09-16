@@ -11,7 +11,6 @@ cmake_minimum_required(VERSION 3.29)
 # ==== Environment ====
 
 set(BOARD $ENV{ZEPHYR_BOARD})                                 # Target board for the application
-set(BUILD_TARGET $ENV{ZEPHYR_BUILD_TARGET})                   # Target triple (e.g., arm-none-eabi)
 set(CROSS_COMPILE $ENV{CROSS_COMPILE})                        # Cross-compiler prefix
 set(DTC_OVERLAY_FILE $ENV{ZEPHYR_BOARD_OVERLAY})              # Device Tree overlay file
 set(SYSROOT_DIR $ENV{SYSROOT_DIR})                            # Sysroot directory for cross-compilation

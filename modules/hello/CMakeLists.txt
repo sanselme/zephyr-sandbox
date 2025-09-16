@@ -7,8 +7,5 @@
 # ==============================================================================
 
 if(CONFIG_HELLO)
-
-project(Hello)
-swift_library()
-
+  swift_library(MODULE_NAME Hello)
 endif()
