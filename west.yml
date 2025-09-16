@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: GPL-3.0
+# Copyright (c) 2025 Schubert Anselme <schubert@anselm.es>
+
+manifest:
+  remotes:
+    - name: anselmes
+      url-base: https://github.com/anselmes
+
+  projects:
+    - name: zephyr
+      remote: anselmes
+      revision: main
+
+  self: .
