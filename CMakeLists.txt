@@ -29,12 +29,6 @@ find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 
 # ==== Configuration ====
 
-# Configure Swift compiler settings
-set(CMAKE_Swift_COMPILER_TARGET ${BUILD_TARGET})        # Set target triple for Swift compiler
-set(CMAKE_Swift_COMPILATION_MODE wholemodule)           # Enable whole-module optimization (WMO) required by Embedded Swift
-set(CMAKE_Swift_COMPILER_WORKS true)                    # Explicitly indicate Swift compiler is functional
-
 # Define the project with Swift language support
 project(sandbox)
-enable_language(Swift)
 swift_application()
