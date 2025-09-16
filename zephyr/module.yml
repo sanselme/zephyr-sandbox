@@ -1,4 +1,4 @@
-name: custom-libs
+name: sandbox
 
 build:
   cmake: .
