@@ -7,5 +7,5 @@
 # ==============================================================================
 
 if(CONFIG_HELLO)
-  swift_library(MODULE_NAME Hello)
+  zephyr_swift_library(MODULE_NAME Hello)
 endif()

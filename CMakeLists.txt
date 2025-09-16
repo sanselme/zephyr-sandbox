@@ -30,4 +30,4 @@ find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 
 # Define the project with Swift language support
 project(sandbox)
-swift_application()
+zephyr_swift_application()
