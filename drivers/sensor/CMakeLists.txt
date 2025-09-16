@@ -1,0 +1,1 @@
+add_subdirectory_ifdef(CONFIG_SANDBOX_SENSOR sandbox_sensor)

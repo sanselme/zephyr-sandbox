@@ -1,5 +1,5 @@
 # ==============================================================================
-# PROJECT CMAKE CONFIGURATION
+# APPLICATION CMAKE CONFIGURATION
 # ==============================================================================
 # This CMake build file configures a Zephyr RTOS embedded project with Swift
 # language support. It handles the integration between Swift compiler settings
@@ -20,7 +20,11 @@ set(ZEPHYR_TOOLCHAIN_VARIANT $ENV{ZEPHYR_TOOLCHAIN_VARIANT})  # Toolchain varian
 
 # Add custom Zephyr modules (e.g., for Swift support)
 # Uncomment and set the path to your custom Zephyr modules if needed
+<<<<<<< HEAD
 set(ZEPHYR_EXTRA_MODULES ${CMAKE_CURRENT_LIST_DIR}/..)
+=======
+# set(ZEPHYR_EXTRA_MODULES ${CMAKE_CURRENT_LIST_DIR}/modules/lang/swift)
+>>>>>>> 7c28efb (Add initial support for Swift in Zephyr RTOS)
 
 # Find and include Zephyr RTOS package
 # This initializes Zephyr's build system and makes its build targets available
@@ -30,4 +34,9 @@ find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 
 # Define the project with Swift language support
 project(sandbox)
+<<<<<<< HEAD
 zephyr_swift_application()
+=======
+# zephyr_swift_application()
+swift_application()
+>>>>>>> 7c28efb (Add initial support for Swift in Zephyr RTOS)
