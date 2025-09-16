@@ -1,0 +1,24 @@
+# SPDX-License-Identifier: GPL-3.0
+# Copyright (c) 2025 Schubert Anselme <schubert@anselm.es>
+
+menuconfig BLINK
+  bool "Blink device drivers"
+  help
+    This option enables the blink custom driver class.
+
+if BLINK
+
+config BLINK_INIT_PRIORITY
+  int "Blink device driver init priority"
+  default KERNEL_INIT_PRIORITY_DEVICE
+  help
+    Blink device drivers init priority.
+
+module      = BLINK
+module-str  = blink
+
+source "subsys/logging/Kconfig.template.log_config"
+
+rsource "Kconfig.gpio_led"
+
+endif

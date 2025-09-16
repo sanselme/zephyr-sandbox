@@ -2,6 +2,3 @@
 // Copyright (c) 2025 Schubert Anselme <schubert@anselm.es>
 
 import Zephyr
-import Hello
-
-public func entrypoint() { Hello.run() }
