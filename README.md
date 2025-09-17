@@ -2,6 +2,8 @@
 
 This sandbox demonstrates usage of [zephyr-lang-swift](https://github.com/anselmes/zephyr-lang-swift) for Swift development with Zephyr RTOS.
 
+![demo](./hack/demo.gif)
+
 ---
 
 ## License
