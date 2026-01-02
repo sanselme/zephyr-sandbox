@@ -1,6 +1,6 @@
-# Zephyr Sandbox
+# Zephyr Playground
 
-This sandbox demonstrates usage of [zephyr-lang-swift](https://github.com/anselmes/zephyr-lang-swift) for Swift development with Zephyr RTOS.
+This example demonstrates usage of [zephyr-lang-swift](https://github.com/anselmes/zephyr-lang-swift) for Swift development with Zephyr RTOS.
 
 ![demo](./hack/demo.gif)
 

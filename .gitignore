@@ -125,3 +125,6 @@ build/
 
 *.env
 *.mov
+
+# Exceptions
+!example.env
