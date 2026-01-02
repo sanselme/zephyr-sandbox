@@ -3,6 +3,6 @@
 
 if SENSOR
 
-rsource "sandbox_sensor/Kconfig"
+rsource "example_sensor/Kconfig"
 
 endif

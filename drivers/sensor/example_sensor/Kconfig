@@ -1,10 +1,10 @@
 # SPDX-License-Identifier: GPL-3.0
 # Copyright (c) 2025 Schubert Anselme <schubert@anselm.es>
 
-config SANDBOX_SENSOR
-  bool "Sandbox Sensor"
+config EXAMPLE_SENSOR
+  bool "Example Sensor"
   default y
-  depends on DT_HAS_ZEPHYR_SANDBOX_SENSOR_ENABLED
+  depends on DT_HAS_ZEPHYR_EXAMPLE_SENSOR_ENABLED
   select GPIO
   help
     Enable example sensor

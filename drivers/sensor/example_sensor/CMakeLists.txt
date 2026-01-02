@@ -6,4 +6,4 @@
 # and Zephyr's build system for embedded development.
 # ==============================================================================
 
-zephyr_swift_library(MODULE_NAME SandboxSensor)
+zephyr_swift_library(MODULE_NAME ExampleSensor)
