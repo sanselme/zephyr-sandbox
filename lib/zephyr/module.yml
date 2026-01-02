@@ -1,4 +1,4 @@
-name: sandbox
+name: example
 
 build:
   cmake: .
