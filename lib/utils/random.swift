@@ -4,12 +4,9 @@
 import Zephyr
 
 public func random(errored: Bool) -> Result<Int32, Error> {
-  var value: Int32 = 0
-  if errored {
-    let err = Error(errno: ENODEV)
-    return .failure(err)
-  } else {
-    sys_rand_get(&value, MemoryLayout.size(ofValue: value))
-    return .success(value)
-  }
+  if errored { return .failure(Error(errno: ENODEV)) }
+
+  let u: UInt32 = sys_rand32_get()
+  let v = Int32(bitPattern: u)
+  return .success(v)
 }
